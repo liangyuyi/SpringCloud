@@ -1,0 +1,20 @@
+server:
+  port: 8000
+eureka:
+  instance:
+    hostname: localhost
+  client: #表明自己是个server
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+spring:
+  application:
+    name: server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/liangyuyi/SpringCloud #github 项目url
+          search-paths: config #配置文件所在文件夹
+      label: master  #配置仓库的分支
