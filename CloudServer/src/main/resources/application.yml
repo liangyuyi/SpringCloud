@@ -3,7 +3,7 @@ server:
 eureka:
   instance:
     hostname: localhost
-  client: #±íÃ÷×Ô¼ºÊÇ¸öserver
+  client: #è¡¨æ˜è‡ªå·±æ˜¯ä¸ªserver
     register-with-eureka: false
     fetch-registry: false
     service-url:
@@ -15,6 +15,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/liangyuyi/SpringCloud #github ÏîÄ¿url
-          search-paths: config #ÅäÖÃÎÄ¼şËùÔÚÎÄ¼ş¼Ğ
-      label: master  #ÅäÖÃ²Ö¿âµÄ·ÖÖ§
+          uri: https://github.com/liangyuyi/SpringCloud #github é¡¹ç›®url
+          search-paths: config #é…ç½®æ–‡ä»¶æ‰€åœ¨æ–‡ä»¶å¤¹
+      label: master  #é…ç½®ä»“åº“çš„åˆ†æ”¯
