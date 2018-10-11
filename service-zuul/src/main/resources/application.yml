@@ -1,0 +1,22 @@
+server:
+  port: 9020
+# 表明服务提供者的名称
+spring:
+  application:
+    name: server-zuul
+#指定服务注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: server-ribbon
+    api-b:
+      path: /api-b/**
+      serviceId: server-feign
+ribbon:
+  eureka:
+    enabled: true

@@ -17,4 +17,5 @@ spring:
         git:
           uri: https://github.com/liangyuyi/SpringCloud #github 项目url
           search-paths: config #配置文件所在文件夹
+        prefix: /config  #给config 添加前缀
       label: master  #配置仓库的分支

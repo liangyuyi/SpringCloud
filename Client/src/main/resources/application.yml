@@ -1,8 +1,10 @@
 server:
   port: 9000
+# 表明服务提供者的名称
 spring:
   application:
     name: client-1
+#指定服务注册中心
 eureka:
   client:
     service-url:

@@ -1,0 +1,14 @@
+server:
+  port: 9011
+# 表明服务提供者的名称
+spring:
+  application:
+    name: server-feign
+#指定服务注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+ribbon:
+  hystrix:
+    enabled: true
